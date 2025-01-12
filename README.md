@@ -1,5 +1,7 @@
 # 2048-Game
 
+### Play the Game Online: [2048](https://devanshs31.github.io/2048-Game/)
+
 ## Description
 This is a web-based version of the popular 2048 game. The objective of the game is to slide numbered tiles on a grid to combine them and create a tile with the number 2048.
 
