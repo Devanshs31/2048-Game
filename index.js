@@ -231,3 +231,38 @@ function hasEmptyTile(){
     }
     return false;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("restart-button").addEventListener("click", restartGame);
+});
+
+function restartGame() {
+    // Reset the container array
+    container = [
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0]
+    ];
+
+    // Reset the score
+    score = 0;
+    document.getElementById("score").innerText = score;
+
+    // Clear and re-render the tiles
+    document.getElementById("container").innerHTML = ''; // Clear the container
+
+    for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < columns; c++) {
+            let tile = document.createElement("div");
+            tile.id = r.toString() + "-" + c.toString();
+            let num = container[r][c];
+            renderTile(tile, num);
+            document.getElementById("container").append(tile);
+        }
+    }
+
+    // Add two initial tiles
+    addTwo();
+    addTwo();
+}
