@@ -37,6 +37,21 @@ h2{
     font-size: 30px;
 }
 
+button#restart-button {
+    background-color: #8f7a66;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+button#restart-button:hover {
+    background-color: #776e65;
+}
+
+
 /* colored tiles */
 
 .x2 {
