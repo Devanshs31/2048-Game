@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2048 GAME</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>2048 GAME</h1><hr>
+        <h2>SCORE: <span id="score">0</span></h2>
+        <div id="container">
+        
+        </div>
+        <button id="restart-button">Restart Game</button>  
+        <script src="index.js"></script>
+    </body>
+</html>
